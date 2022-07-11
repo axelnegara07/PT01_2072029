@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="backgroundColor" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt01d_2072029.HelloController">
+   <top>
+      <VBox prefHeight="100.0" prefWidth="600.0" styleClass="backgroundColor2" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="600.0" text="NOMOR ANTRIAN ANDA" textFill="WHITE">
+               <font>
+                  <Font name="Perpetua Titling MT Bold" size="43.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="18.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="angka" alignment="CENTER" prefHeight="291.0" prefWidth="600.0" text="1" textFill="WHITE">
+               <font>
+                  <Font name="Perpetua Titling MT Bold" size="196.0" />
+               </font>
+               <padding>
+                  <Insets bottom="80.0" />
+               </padding>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets top="100.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="600.0" styleClass="backgroundColor3">
+               <children>
+                  <Button alignment="CENTER" cache="true" contentDisplay="CENTER" mnemonicParsing="false" onAction="#button" prefHeight="29.0" prefWidth="214.0" style="-fx-background-color: #B47324;" text="ANTRIAN SELANJUTNYA" textFill="WHITE">
+                     <effect>
+                        <Blend mode="RED" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="193.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BOTTOM_RIGHT" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#reset" text="RESET">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="530.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
